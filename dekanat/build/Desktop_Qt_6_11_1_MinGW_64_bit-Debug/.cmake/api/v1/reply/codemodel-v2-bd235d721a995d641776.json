@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-74213f7b43401f362c01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dekanat",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dekanat::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dekanat-Debug-5e7cbd383e5b8290ed7b.json",
+					"name" : "dekanat",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dekanat_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dekanat_autogen-Debug-0c801ceff62def5aece5.json",
+					"name" : "dekanat_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dekanat_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dekanat_autogen_timestamp_deps-Debug-f7e52e8f107813fd2198.json",
+					"name" : "dekanat_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Yulia/Desktop/dekanat/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Yulia/Desktop/dekanat"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

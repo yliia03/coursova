@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог — Маркетум | Корисні статті про маркетинг</title>
+    <meta name="description" content="Блог Маркетум — експертні статті про digital-маркетинг, брендинг, SEO та email-маркетинг. Практичні поради для вашого бізнесу.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Маркетум</a>
+            
+            <ul class="nav-list" id="navList">
+                <li><a href="index.html" class="nav-link">Головна</a></li>
+                <li><a href="about.html" class="nav-link">Про нас</a></li>
+                <li><a href="404.html" class="nav-link">FAQ</a></li>
+                <li><a href="services.html" class="nav-link">Послуги</a></li>
+                <li><a href="404.html" class="nav-link">Проєкти</a></li>
+                <li><a href="blog.html" class="nav-link nav-link-active">Блог</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="404.html" class="nav-lang">EN</a>
+
+                <button type="button" class="btn btn-nav-cta" id="openModalBtn">Замовити послугу</button>
+                
+                <button class="nav-burger" id="navBurger" aria-label="Відкрити меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container blog-hero-inner">
+                <h1 class="blog-hero-title">Блог</h1>
+                <nav class="breadcrumb" aria-label="Навігація сайтом">
+                    <a href="index.html" class="breadcrumb-link">Головна</a>
+                    <span class="breadcrumb-separator" aria-hidden="true">›</span>
+                    <span class="breadcrumb-current">Блог</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="blog-featured" aria-label="Головна стаття">
+            <div class="container">
+                <a href="404.html" class="blog-featured-card">
+                    <div class="blog-featured-img-wrap">
+                        <img src="img/blog/blog-featured.webp" alt="Команда маркетологів обговорює стратегію" class="blog-featured-img">
+                        <div class="blog-featured-overlay"></div>
+                    </div>
+                    <div class="blog-featured-body">
+                        <span class="blog-tag">Digital-маркетинг</span>
+                        <h2 class="blog-featured-title">Маркетингові тренди: що змінилося і як адаптувати стратегію вашого бізнесу</h2>
+                        <div class="blog-featured-meta">
+                            <span class="blog-meta-author">Андрій Мельник</span>
+                            <span class="blog-meta-dot" aria-hidden="true">·</span>
+                            <span class="blog-meta-date">15 травня</span>
+                            <span class="blog-meta-dot" aria-hidden="true">·</span>
+                            <span class="blog-meta-read">8 хв читання</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="blog-cats" aria-label="Категорії блогу">
+            <div class="container blog-cats-inner">
+                <button class="blog-cat blog-cat-active" data-cat="all">Всі статті</button>
+                <button class="blog-cat" data-cat="digital">Digital-маркетинг</button>
+                <button class="blog-cat" data-cat="brand">Брендинг</button>
+                <button class="blog-cat" data-cat="seo">SEO</button>
+                <button class="blog-cat" data-cat="email">Email-маркетинг</button>
+                <button class="blog-cat" data-cat="smm">Соціальні мережі</button>
+                <button class="blog-cat" data-cat="strategy">Стратегія</button>
+            </div>
+        </section>
+
+        <section class="blog-main">
+            <div class="container">
+                <h2 class="visually-hidden">Статті блогу</h2>
+                <div class="blog-main-inner">
+                    <div class="blog-grid" id="blogGrid"></div>
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Пошук</h3>
+                        <form class="sidebar-search">
+                            <input class="sidebar-search-input" type="search" placeholder="Пошук по блогу..." aria-label="Пошук по блогу">
+                            <button type="submit" class="sidebar-search-btn" aria-label="Знайти">
+                                <svg class="search-icon" aria-hidden="true">
+                                    <use href="icons/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Категорії</h3>
+                        <ul class="sidebar-cats">
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">Digital-маркетинг</a>
+                                <span class="sidebar-cat-count">3</span>
+                            </li>
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">Брендинг</a>
+                                <span class="sidebar-cat-count">2</span>
+                            </li>
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">SEO</a>
+                                <span class="sidebar-cat-count">2</span>
+                            </li>
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">Email-маркетинг</a>
+                                <span class="sidebar-cat-count">1</span>
+                            </li>
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">Соціальні мережі</a>
+                                <span class="sidebar-cat-count">1</span>
+                            </li>
+                            <li class="sidebar-cat">
+                                <a href="404.html" class="sidebar-cat-link">Стратегія</a>
+                                <span class="sidebar-cat-count">1</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Популярні статті</h3>
+                        <ul class="sidebar-popular">
+                            <li class="sidebar-popular-item">
+                                <a href="404.html" class="sidebar-popular-img-link">
+                                    <img src="img/blog/sidebar-popular-item/sidebar-popular-item-1.webp" alt="Digital-маркетинг" class="sidebar-popular-img">
+                                </a>
+                                <div class="sidebar-popular-body">
+                                    <a href="404.html" class="sidebar-popular-title">5 трендів digital-маркетингу</a>
+                                    <span class="sidebar-popular-date">12 травня</span>
+                                </div>
+                            </li>
+                            <li class="sidebar-popular-item">
+                                <a href="404.html" class="sidebar-popular-img-link">
+                                    <img src="img/blog/sidebar-popular-item/sidebar-popular-item-2.webp" alt="Побудова бренду" class="sidebar-popular-img">
+                                </a>
+                                <div class="sidebar-popular-body">
+                                    <a href="404.html" class="sidebar-popular-title">Як побудувати сильний бренд з нуля</a>
+                                    <span class="sidebar-popular-date">8 травня</span>
+                                </div>
+                            </li>
+                            <li class="sidebar-popular-item">
+                                <a href="404.html" class="sidebar-popular-img-link">
+                                    <img src="img/blog/sidebar-popular-item/sidebar-popular-item-3.webp" alt="SEO" class="sidebar-popular-img">
+                                </a>
+                                <div class="sidebar-popular-body">
+                                    <a href="404.html" class="sidebar-popular-title">SEO: що змінилося після оновлень Google</a>
+                                    <span class="sidebar-popular-date">25 квітня</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Теги</h3>
+                        <div class="sidebar-tags">
+                            <a href="404.html" class="sidebar-tag">Маркетинг</a>
+                            <a href="404.html" class="sidebar-tag">SEO</a>
+                            <a href="404.html" class="sidebar-tag">Брендинг</a>
+                            <a href="404.html" class="sidebar-tag">Email</a>
+                            <a href="404.html" class="sidebar-tag">SMM</a>
+                            <a href="404.html" class="sidebar-tag">Стратегія</a>
+                            <a href="404.html" class="sidebar-tag">Контент</a>
+                            <a href="404.html" class="sidebar-tag">Аналітика</a>
+                            <a href="404.html" class="sidebar-tag">Реклама</a>
+                            <a href="404.html" class="sidebar-tag">Бізнес</a>
+                        </div>
+                    </div>
+                </aside>
+                </div>
+            </div>
+
+            <div class="container">
+                <nav class="pagination" aria-label="Навігація по сторінках блогу">
+                    <button class="pagination-btn pagination-btn-prev" disabled aria-label="Попередня сторінка">&lt;</button>
+                    <button class="pagination-page pagination-page-active">1</button>
+                    <button class="pagination-page">2</button>
+                    <button class="pagination-page">3</button>
+                    <span class="pagination-dots" aria-hidden="true">…</span>
+                    <button class="pagination-page">8</button>
+                    <button class="pagination-btn pagination-btn-next" aria-label="Наступна сторінка">&gt;</button>
+                </nav>
+            </div>
+
+        </section>
+
+        <section class="blog-cta">
+            <div class="blog-cta-overlay"></div>
+            <div class="container blog-cta-content">
+                <p class="section-eyebrow blog">Готові до росту?</p>
+                <h2 class="blog-cta-title">Замовте безкоштовну маркетингову консультацію</h2>
+                <p class="blog-cta-sub">Наші експерти проаналізують ваш бізнес і запропонують конкретні кроки для збільшення продажів.</p>
+                <button type="button" class="btn btn-primary">Отримати консультацію</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p class="footer-logo">Маркетум</p>
+                <p class="footer-tagline">Ваш надійний партнер у світі маркетингу. Допомагаємо бізнесу рости з 2014 року.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Футер навігація">
+                <h3 class="footer-heading">Посилання</h3>
+                <ul class="footer-list">
+                    <li><a href="index.html" class="footer-link">Головна</a></li>
+                    <li><a href="about.html" class="footer-link">Про нас</a></li>
+                    <li><a href="services.html" class="footer-link">Послуги</a></li>
+                    <li><a href="404.html" class="footer-link">Команда</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav" aria-label="Підтримка">
+                <h3 class="footer-heading">Підтримка</h3>
+                <ul class="footer-list">
+                    <li><a href="blog.html" class="footer-link">Блог</a></li>
+                    <li><a href="404.html" class="footer-link">Проєкти</a></li>
+                    <li><a href="contacts.html" class="footer-link">Контакти</a></li>
+                    <li><a href="404.html" class="footer-link">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="subscribe-box">
+                <form class="subscribe-form" id="subscribeForm">
+                    <div class="subscribe-field-wrap">
+                        <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="Введіть ваш Email..." required>
+                        <button type="submit" class="subscribe-btn">Підписатися</button>
+                    </div>
+                </form>
+                
+                <div class="subscribe-message" id="subscribeMessage"></div>
+                <a href="#navList" class="footer-scroll-top" aria-label="Повернутися до початку сторінки">Назад догори</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="footer-copy">&copy; 2026 Маркетум. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose" aria-label="Закрити модальне вікно">&#x2715;</button>
+            <h2 class="modal-title" id="modalTitle">Замовити консультацію</h2>
+            <p class="modal-sub">Заповніть форму і ми зв'яжемося з вами протягом 24 годин.</p>
+            
+            <form id="modalForm">
+                <div class="modal-fields">
+                    <input class="modal-input" type="text" placeholder="Ваше ім'я *" aria-label="Ваше ім'я" maxlength="60" required>
+                    <input class="modal-input" type="email" placeholder="Email *" aria-label="Email" maxlength="80" required>
+                    
+                    <input class="modal-input" type="tel" id="modalPhone" placeholder="Ваше номер телефону *" aria-label="Телефон" maxlength="12" required>
+                    
+                    <select class="modal-input" aria-label="Послуга" required>
+                        <option value="">Оберіть послугу *</option>
+                        <option value="brand">Бренд та ідентичність</option>
+                        <option value="marketing">Маркетингове планування</option>
+                        <option value="business">Бізнес-планування</option>
+                        <option value="email">Email-маркетинг</option>
+                    </select>
+                    <textarea class="modal-textarea" placeholder="Опишіть ваш запит" aria-label="Запит" maxlength="500"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit">Надіслати заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+</html>

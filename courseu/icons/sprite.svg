@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+
+    <symbol id="icon-brand" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+        <path d="M13 20l5 5 9-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-marketing" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 28l4-8 4 4 4-6 4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-business" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+        <rect x="13" y="16" width="14" height="10" rx="1" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 16v-2a4 4 0 018 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-email" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+        <path d="M13 14h14M13 20h10M13 26h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="pricing-icon" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="36" height="36" rx="18" stroke="#C2C2C2" stroke-width="2"/>
+        <path d="M16 24h16" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    
+    <symbol id="pricing-icon-plus-orange" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="36" height="36" rx="18" stroke="#F39C12" stroke-width="2"/>
+        <path d="M16 24h16M24 16v16" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="pricing-icon-arrow-down" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="36" height="36" rx="18" stroke="#C2C2C2" stroke-width="2"/>
+        <path d="M16 20l8 8 8-8" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="pricing-icon-plus-gray" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="36" height="36" rx="18" stroke="#C2C2C2" stroke-width="2"/>
+        <path d="M16 24h16M24 16v16" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    
+    <symbol id="icon-search" viewBox="0 0 20 20" fill="none">
+        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+        <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 24 24">
+        <path fill="currentColor" fill-rule="evenodd" d="M1.5 12a.75.75 0 0 1 .75-.75h17.69l-4.72-4.72a.75.75 0 0 1 1.06-1.06l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H2.25A.75.75 0 0 1 1.5 12" clip-rule="evenodd"/>
+    </symbol>
+
+    <symbol id="logo-nova" viewBox="0 0 100 40">
+        <text x="0" y="30" font-family="sans-serif" font-weight="700" font-size="26" fill="currentColor">Nova</text>
+    </symbol>
+    <symbol id="logo-pulse" viewBox="0 0 120 40">
+        <text x="0" y="30" font-family="sans-serif" font-weight="700" font-size="24" fill="currentColor">Pulse</text>
+    </symbol>
+    <symbol id="logo-trend" viewBox="0 0 130 40">
+        <text x="0" y="30" font-family="sans-serif" font-weight="700" font-size="24" fill="currentColor">TrendUp</text>
+    </symbol>
+    <symbol id="logo-boost" viewBox="0 0 130 40">
+        <text x="0" y="30" font-family="sans-serif" font-weight="700" font-size="24" fill="currentColor">BrandBoost</text>
+    </symbol>
+    <symbol id="logo-sun" viewBox="0 0 120 40">
+        <text x="0" y="30" font-family="sans-serif" font-weight="700" font-size="24" fill="currentColor">SunCity</text>
+    </symbol>
+    
+    <symbol id="instagram" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M16.002 0c-4.346 0-4.891.019-6.598.097C7.701.175 6.538.444 5.521.84a7.8 7.8 0 0 0-2.835 1.845A7.85 7.85 0 0 0 .84 5.519C.443 6.537.173 7.7.096 9.402.02 11.11 0 11.655 0 16c0 4.346.02 4.89.097 6.596.078 1.703.348 2.866.743 3.883a7.8 7.8 0 0 0 1.845 2.835A7.8 7.8 0 0 0 5.52 31.16c1.018.396 2.18.666 3.884.744 1.706.077 2.252.096 6.596.096 4.346 0 4.89-.019 6.597-.096 1.703-.078 2.867-.348 3.885-.744a7.8 7.8 0 0 0 2.832-1.846 7.85 7.85 0 0 0 1.847-2.834c.393-1.018.663-2.181.743-3.884C31.98 20.89 32 20.346 32 16c0-4.345-.02-4.89-.097-6.597-.08-1.704-.35-2.866-.743-3.884a7.85 7.85 0 0 0-1.847-2.834A7.8 7.8 0 0 0 26.48.84C25.46.444 24.297.175 22.593.097 20.887.019 20.343 0 15.996 0zm-1.436 2.883h1.435c4.272 0 4.779.016 6.466.092 1.56.072 2.407.332 2.97.551.747.29 1.28.637 1.84 1.197s.906 1.093 1.197 1.84c.219.563.48 1.41.55 2.97.077 1.687.094 2.194.094 6.464s-.017 4.776-.093 6.463c-.072 1.56-.332 2.407-.551 2.97a4.95 4.95 0 0 1-1.198 1.838c-.56.56-1.091.907-1.838 1.197-.564.22-1.411.48-2.971.551-1.687.077-2.193.093-6.465.093s-4.78-.016-6.466-.093c-1.56-.072-2.407-.333-2.97-.552a4.96 4.96 0 0 1-1.84-1.196 4.96 4.96 0 0 1-1.198-1.84c-.22-.563-.48-1.41-.551-2.97-.077-1.686-.092-2.193-.092-6.465s.015-4.777.092-6.464c.071-1.56.332-2.407.55-2.97.29-.747.638-1.28 1.198-1.84a5 5 0 0 1 1.84-1.198c.564-.22 1.411-.48 2.971-.552 1.476-.066 2.048-.086 5.03-.09zm9.976 2.657a1.92 1.92 0 1 0 0 3.84 1.92 1.92 0 0 0 0-3.84m-8.54 2.243a8.217 8.217 0 1 0 0 16.435 8.217 8.217 0 0 0 0-16.435m0 2.884a5.333 5.333 0 1 1 0 10.667 5.333 5.333 0 0 1 0-10.667"/>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M32.002 16.098C32.002 7.208 24.838 0 16 0S0 7.208 0 16.098c0 8.036 5.851 14.696 13.5 15.903v-11.25H9.439v-4.653h4.063v-3.546c0-4.035 2.389-6.264 6.044-6.264 1.75 0 3.581.315 3.581.315v3.962H21.11c-1.988 0-2.608 1.24-2.608 2.514v3.02h4.438l-.71 4.653h-3.728v11.25c7.65-1.208 13.5-7.868 13.5-15.904"/>
+    </symbol>
+
+    <symbol id="tiktok" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M18 0h3.961c.286 1.43 1.08 3.234 2.47 5.024C25.79 6.778 27.593 8 30 8v4c-3.507 0-6.142-1.627-8-3.657V22c0 5.523-4.477 10-10 10S2 27.523 2 22s4.477-10 10-10v4a6 6 0 1 0 6 6z"/>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16m-15.427-4.188q-2.334.97-9.33 4.02-1.137.45-1.19.883c-.062.487.548.679 1.378.94l.35.111c.817.266 1.916.576 2.488.589q.777.016 1.735-.641 6.537-4.413 6.749-4.46c.1-.024.237-.052.33.031s.085.24.075.283c-.06.258-2.454 2.483-3.692 3.634-.387.36-.66.614-.716.672q-.19.195-.377.372c-.759.732-1.328 1.28.032 2.176.653.431 1.176.787 1.698 1.142.57.388 1.137.775 1.873 1.257q.28.186.54.374c.663.473 1.258.898 1.994.83.428-.04.87-.441 1.094-1.64.53-2.834 1.572-8.974 1.812-11.504a2.8 2.8 0 0 0-.026-.63.67.67 0 0 0-.228-.433c-.192-.155-.488-.188-.62-.186-.602.01-1.525.332-5.969 2.18"/>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M0 2.292C0 1.027 1.052 0 2.35 0h27.3C30.948 0 32 1.027 32 2.292v27.416C32 30.974 30.948 32 29.65 32H2.35C1.052 32 0 30.974 0 29.708zm9.887 24.495v-14.45H5.084v14.45zM7.485 10.365c1.675 0 2.718-1.11 2.718-2.497-.032-1.417-1.043-2.496-2.686-2.496S4.8 6.45 4.8 7.868c0 1.387 1.042 2.497 2.654 2.497zm9.818 16.422v-8.07c0-.43.031-.862.158-1.171.347-.863 1.137-1.757 2.464-1.757 1.738 0 2.433 1.326 2.433 3.268v7.73h4.803v-8.285c0-4.438-2.37-6.504-5.53-6.504-2.547 0-3.69 1.4-4.328 2.385v.05h-.032l.032-.05v-2.045H12.5c.063 1.355 0 14.45 0 14.45z"/>
+    </symbol>
+
+    <symbol id="check" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+    </symbol>
+    
+    <symbol id="icon-pin" viewBox="0 0 48 48" fill="none">
+        <path d="M24 4C16.268 4 10 10.268 10 18c0 10.5 14 26 14 26s14-15.5 14-26c0-7.732-6.268-14-14-14z" stroke="#F39C12" stroke-width="2"/>
+        <circle cx="24" cy="18" r="4" stroke="#F39C12" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="icon-mail" viewBox="0 0 48 48" fill="none">
+        <path d="M10 14a2 2 0 012-2h24a2 2 0 012 2v20a2 2 0 01-2 2H12a2 2 0 01-2-2V14z" stroke="#F39C12" stroke-width="2"/>
+        <path d="M10 14l14 12 14-12" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-phone" viewBox="0 0 48 48" fill="none">
+        <path d="M14 10h6l3 7-3.5 3.5a22 22 0 009 9L32 26l7 3v6a2 2 0 01-2 2C16 37 10 21 10 12a2 2 0 012-2h2z" stroke="#F39C12" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-clock" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="14" stroke="#F39C12" stroke-width="2"/>
+        <path d="M24 14v10l6 4" stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+  </defs>
+</svg>
