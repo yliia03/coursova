@@ -1,0 +1,69 @@
+@startuml task3-object-pool
+title Ситуація 3. Апарати УЗД — шаблон Object Pool (Пул об'єктів)
+skinparam classAttributeIconSize 0
+
+class UltrasoundPool <<Пул об'єктів (Object Pool)>> {
+  - available : Deque<UltrasoundDevice>
+  - inUse : Set<UltrasoundDevice>
+  - totalCreated : int
+  - totalServed : int
+  + UltrasoundPool(size : int)
+  + acquire(patient : Patient, profile : String) : Optional<UltrasoundDevice>
+  + release(device : UltrasoundDevice, patient : Patient)
+  + availableCount() : int
+  + inUseCount() : int
+  + getTotalCreated() : int
+  + getTotalServed() : int
+}
+
+class UltrasoundDevice <<Об'єкт для повторного використання>> {
+  + {static} {readOnly} DEFAULT_PROFILE : String
+  - id : String
+  - currentPatient : Patient
+  - settingsProfile : String
+  + UltrasoundDevice(id : String)
+  + getId() : String
+  + getCurrentPatient() : Patient
+  + getSettingsProfile() : String
+  ~ assign(patient : Patient, profile : String)
+  ~ reset()
+}
+
+class Patient {
+  - fullName : String
+  - department : String
+  - diagnosis : String
+  - attendingDoctor : String
+  + Patient(fullName, department, diagnosis, attendingDoctor)
+  + getFullName() : String
+  + getDepartment() : String
+  + setDepartment(department : String)
+  + getDiagnosis() : String
+  + setDiagnosis(diagnosis : String)
+  + getAttendingDoctor() : String
+}
+
+class Main <<Клієнт>> {
+  ~ {static} situation3ObjectPool()
+}
+
+note bottom of UltrasoundPool
+  Апарати створюються (калібруються) один
+  раз при ініціалізації пулу. acquire()
+  видає вільний, release() скидає профіль
+  і повертає апарат у пул.
+end note
+
+UltrasoundPool "1" o-- "0..*" UltrasoundDevice : вільні (available)
+UltrasoundPool "1" o-- "0..*" UltrasoundDevice : видані (inUse)
+UltrasoundDevice "0..1" --> "0..1" Patient : обстежує
+UltrasoundPool ..> Patient : <<використовує>>
+Main ..> UltrasoundPool : acquire / release
+Main ..> Patient : <<створює>>
+Main ..> UltrasoundDevice : <<використовує>>
+UltrasoundPool ..> Logger : <<використовує>>
+UltrasoundDevice ..> Logger : <<використовує>>
+class Logger <<Журнал>> {
+  + {static} log(source : String, event : String)
+}
+@enduml

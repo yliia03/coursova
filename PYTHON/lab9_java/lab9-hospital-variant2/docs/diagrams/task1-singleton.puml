@@ -1,0 +1,76 @@
+@startuml task1-singleton
+title Ситуація 1. Реєстр ліжкового фонду — шаблон Singleton (Одинак)
+skinparam classAttributeIconSize 0
+
+class BedRegistry <<Одинак (Singleton)>> {
+  - {static} createdInstances : int
+  - beds : List<Bed>
+  - BedRegistry()
+  + {static} getInstance() : BedRegistry
+  + {static} getCreatedInstances() : int
+  + admit(patient : Patient) : Optional<Bed>
+  + discharge(patient : Patient) : boolean
+  + freeCount(department : String) : long
+}
+
+class "BedRegistry.Holder" as Holder <<Ледача ініціалізація (Lazy holder)>> {
+  - {static} {readOnly} INSTANCE : BedRegistry
+}
+
+class Bed {
+  - wardNumber : String
+  - department : String
+  - state : BedState
+  - patient : Patient
+  + Bed(wardNumber : String, department : String)
+  + getWardNumber() : String
+  + getDepartment() : String
+  + getState() : BedState
+  + getPatient() : Patient
+  + isFree() : boolean
+  ~ occupy(p : Patient)
+  ~ release()
+}
+
+enum BedState {
+  FREE
+  OCCUPIED
+}
+
+class Patient {
+  - fullName : String
+  - department : String
+  - diagnosis : String
+  - attendingDoctor : String
+  + Patient(fullName, department, diagnosis, attendingDoctor)
+  + getFullName() : String
+  + getDepartment() : String
+  + setDepartment(department : String)
+  + getDiagnosis() : String
+  + setDiagnosis(diagnosis : String)
+  + getAttendingDoctor() : String
+}
+
+class Main <<Клієнт>> {
+  ~ {static} situation1Singleton()
+}
+
+note right of BedRegistry
+  Приватний конструктор і єдина точка
+  доступу getInstance(): приймальне та
+  профільні відділення бачать один фонд.
+end note
+
+BedRegistry "1" *-- "0..*" Bed : містить >
+Bed --> "1" BedState : стан
+Bed --> "0..1" Patient : зайняте пацієнтом
+BedRegistry ..> Patient : <<використовує>>
+BedRegistry +-- Holder : вкладений клас
+Holder ..> BedRegistry : створює єдиний екземпляр
+Main ..> BedRegistry : <<використовує>> getInstance()
+Main ..> Patient : <<створює>>
+BedRegistry ..> Logger : <<використовує>>
+class Logger <<Журнал>> {
+  + {static} log(source : String, event : String)
+}
+@enduml

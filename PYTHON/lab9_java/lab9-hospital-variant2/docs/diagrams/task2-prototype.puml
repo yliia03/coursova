@@ -1,0 +1,74 @@
+@startuml task2-prototype
+title Ситуація 2. План обстеження й лікування — шаблон Prototype (Прототип)
+skinparam classAttributeIconSize 0
+
+interface "Prototype<T>" as Prototype <<Прототип (Prototype)>> {
+  + copy() : T
+}
+
+class TreatmentPlan <<Конкретний прототип>> {
+  - protocolName : String
+  - patientName : String
+  - analyses : List<String>
+  - procedures : List<String>
+  - prescriptions : List<String>
+  - diet : String
+  - regime : String
+  - TreatmentPlan(...)
+  + {static} buildFromProtocol(...) : TreatmentPlan
+  + copy() : TreatmentPlan
+  + getProtocolName() : String
+  + getPatientName() : String
+  + setPatientName(name : String)
+  + addPrescription(p : String)
+  + removePrescription(p : String) : boolean
+  + setDiet(diet : String)
+  + setRegime(regime : String)
+  + describe() : String
+}
+
+class PlanTemplateRegistry <<Реєстр прототипів>> {
+  - templates : Map<String, TreatmentPlan>
+  + register(key : String, template : TreatmentPlan)  {зберігає копію}
+  + createFor(key : String, patient : Patient) : TreatmentPlan
+  + getTemplate(key : String) : TreatmentPlan  {копія}
+}
+
+class Patient {
+  - fullName : String
+  - department : String
+  - diagnosis : String
+  - attendingDoctor : String
+  + Patient(fullName, department, diagnosis, attendingDoctor)
+  + getFullName() : String
+  + getDepartment() : String
+  + setDepartment(department : String)
+  + getDiagnosis() : String
+  + setDiagnosis(diagnosis : String)
+  + getAttendingDoctor() : String
+}
+
+class Main <<Клієнт>> {
+  ~ {static} situation2Prototype()
+}
+
+note bottom of TreatmentPlan
+  copy() створює глибоку копію: списки
+  аналізів, процедур і призначень
+  дублюються. Дороге складання плану
+  за протоколом виконується один раз.
+end note
+
+Prototype <|.. TreatmentPlan : реалізує Prototype<TreatmentPlan>
+PlanTemplateRegistry "1" o-- "0..*" TreatmentPlan : зберігає типові плани
+PlanTemplateRegistry ..> Patient : <<використовує>>
+TreatmentPlan ..> TreatmentPlan : <<створює>> копію copy()
+Main ..> PlanTemplateRegistry : <<використовує>>
+Main ..> TreatmentPlan : коригує копію
+Main ..> Patient : <<створює>>
+TreatmentPlan ..> Logger : <<використовує>>
+PlanTemplateRegistry ..> Logger : <<використовує>>
+class Logger <<Журнал>> {
+  + {static} log(source : String, event : String)
+}
+@enduml
